@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    color: #0F2137;
+    font-family: B612;
+    font-size: 48px;
+    padding-bottom: 20px;
+    width: 850px;
+}
+
+h2{
+    color: #0F2137;
+    font-family: B612;
+
+}
+
+p{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #0F2137;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+.header{
+    margin-bottom: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    width: 100%;
+}
+#logo{
+    display: flex;
+    width: 10%;
+    height: 70px;
+}
+
+.listAfterLogo{
+    display: flex;
+    justify-content: space-around;
+    align-content: start;
+    width: 40%;
+    height: 70px;
+}
+
+nav ul li{
+    padding-left: 40px;
+}
+
+.lastListNav{
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    width: auto;
+    height: 70px;
+}
+
+#firstSection{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+section{
+    margin-bottom: 60px;
+}
+
+.allSections{
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.containerOfAllCart{
+    display: flex;
+    justify-content: space-around;
+}
+
+.allCart{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iconCart{
+    padding-right: 20px;
+}
+
+#cartIntro{
+    padding-bottom: 100px;
+}
+
+.allCartText{
+    width: 200px;
+}
+
+.allCartText p{
+    text-align: left;
+}
+
+#quoteSection{
+    width: 850px;
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: start;
+}
+
+#quote{
+    font-size: 24px;
+    text-align: left;
+}
+
+#quoteAutor {
+    font-size: 16px;
+    text-align: left;
+    color: #7E8896;
+}
+
+#companyLogo{
+    display: flex;
+    justify-content: space-around;
+}
+
+#popularBlogsIntro h2{
+    text-align: center;   
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60vh;
+}
+
+.ulFooter{
+    display: flex;
+    flex-direction: column;
+}
+
+.ulFooter li{
+    margin-bottom: 20px;
+}
