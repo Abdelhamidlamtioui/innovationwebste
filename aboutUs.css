@@ -1,0 +1,10 @@
+.aboutUsIntro{
+    background-image: url(img/aboutUsImg.png);
+    height:600PX;
+}
+
+.formCheck{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
