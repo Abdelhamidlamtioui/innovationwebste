@@ -6,6 +6,7 @@
     padding: 0;
 }
 
+
 h1{
     text-align: center;
     color: #0F2137;
@@ -123,6 +124,14 @@ section{
     width: 100%;
 }
 
+.allSections img{
+    width: 1400px;
+}
+
+#companyLogo img{
+    height: 50px;
+}
+
 .containerOfAllCart{
     display: flex;
     justify-content: space-around;
@@ -131,6 +140,10 @@ section{
 .allCart{
     display: flex;
     justify-content: space-evenly;
+}
+
+.allCart img{
+    width: 100%;
 }
 
 .iconCart{
