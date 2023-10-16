@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -20,10 +23,15 @@ h2{
 
 p{
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: DM Sans;
     color: #0F2137;
     padding-bottom: 20px;
     text-align: center;
+}
+
+h4{
+    color: #0F2137;
+    font-family: B612;
 }
 
 li{
@@ -63,6 +71,12 @@ nav{
     height: 70px;
     width: 100%;
 }
+
+nav li{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
 #logo{
     display: flex;
     align-items: center;
@@ -224,20 +238,92 @@ section{
 
 .popularBlogsSection3{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     height: 500px;
     width: 400px;
+}
+
+.popularBlogsSection3 h4{
+    width: 300px ;
+    text-align: right;
+    padding-bottom: 20px;
+    color: white;
 }
 
 #blogSection3Div1{
     height: 230px;
     width: 350px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
     background-image: url(img/img3_blog.png);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0,1);
 }
 
 #blogSection3Div2{
     height: 230px;
     width: 350px;
+    display: flex;
+    align-items: end;
     background-image: url(img/img4_blog.png);
+    background-size: cover;
+    box-shadow: black;
+}
+
+.emailUsSubscribe{
+    display: flex;
+    justify-content: space-around;
+    height: 380;
+    width: 100%;
+    background-color: #F8F0EA;
+}
+
+.subscribeForm{
+    display: flex;
+    align-items: center;
+}
+
+.subscribeForm h3{
+    color: #0F2137;
+    font-family: B612;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px; 
+    letter-spacing: -0.5px;
+    padding-left: 25px;
+    text-align: left;
+}
+
+.subscribeForm p{
+    color: #343D48;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    padding-left: 25px;
+    width: 360px;
+    text-align: left;
+}
+
+input{
+    border-radius: 5px;
+    background: #EFF3F7;
+    height: 60px;
+    width: 400px;
+}
+
+button{
+    height: 60px;
+    width: 150px;
+}
+
+
+.paddindSubscribe{
+    padding-right: 20px;
 }
 
 footer{
@@ -253,5 +339,28 @@ footer{
 }
 
 .ulFooter li{
+    color: #02073E;
+    font-family: DM Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 250%;
+}
+
+.ulFooter h3{
     margin-bottom: 20px;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.logoFooter{
+    color: #02073E;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
