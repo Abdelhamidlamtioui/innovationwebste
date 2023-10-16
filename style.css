@@ -30,7 +30,8 @@ p{
     text-align: center;
 }
 
-h4{
+h3{
+    font-size: 17px;
     color: #0F2137;
     font-family: B612;
 }
@@ -223,7 +224,7 @@ section{
     line-height: 30px;
 }
 
-.blogSection h4{
+.blogSection h3{
     text-align: left;
     line-height: 30px;
 }
@@ -259,7 +260,7 @@ section{
     width: 400px;
 }
 
-.popularBlogsSection3 h4{
+.popularBlogsSection3 h3{
     width: 300px ;
     text-align: right;
     padding-bottom: 20px;
