@@ -11,9 +11,11 @@ h1{
     text-align: center;
     color: #0F2137;
     font-family: B612;
-    font-size: 48px;
+    font-size: 33px;
     padding-bottom: 20px;
-    width: 850px;
+    width: 60%;
+    resize: both;
+    overflow: auto;
 }
 
 h2{
@@ -119,18 +121,18 @@ section{
 
 .allSections{
     display: flex;
-    padding-top: 50px;
+    padding-top: 4%;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
 .allSections img{
-    width: 1400px;
+    width: 100%;
 }
 
 #companyLogo img{
-    height: 50px;
+    height: 45%;
 }
 
 .containerOfAllCart{
@@ -140,7 +142,8 @@ section{
 
 .allCart{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 3%;
 }
 
 .allCart img{
@@ -152,11 +155,15 @@ section{
 }
 
 #cartIntro{
-    padding-bottom: 100px;
+    padding-bottom: 7%;
+}
+
+#cartIntro p{
+    width: 60%;
 }
 
 .allCartText{
-    width: 200px;
+    width: 55%;
 }
 
 .allCartText p{
@@ -164,9 +171,9 @@ section{
 }
 
 #quoteSection{
-    width: 850px;
+    width: 70%;
     display: flex;
-    padding-top: 50px;
+    padding-top: 4%;
     flex-direction: column;
     align-items: start;
 }
@@ -193,6 +200,13 @@ section{
 
 #popularBlogsIntro{
     padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#popularBlogsIntro p{
+    width: 80%;
 }
 
 #popularBlogsIntro h2{
@@ -201,22 +215,36 @@ section{
 
 #popularBlogsContent{
     display: flex;
-    gap: 20px;
+    justify-content: space-around;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: auto;
 }
 
 .popularBlogsSection1{
     position: relative;
-    height: 500px;
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    width: 30%;
+}
+
+#blogSection1Div1{
+    height: 45%;
 }
 
 #blogImg1{
-    width: 350px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    
 }
 
-#blogSectionFirst{
-    height: 220px;
-    width: 350px;
+#blogSection1Div2{
+    height: 45%;
+    width: 100%;
 }
 
 .blogSection p{
@@ -231,73 +259,82 @@ section{
 
 .popularBlogsSection2{
     position: relative;
-    height: 500px;
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    width: 30%;
 }
 
 #blogImg2{
-    width: 350px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
 }
 
 #blogSection2Div1{
-    height: 160px;
+    width: 100%;
 }
 
 #blogSection2Div2{
-    height: 170px;
+    width: 100%;
 }
 
 #blogSection2Div3{
-    height: 120px;
+    width: 100%;
 }
 
 .popularBlogsSection3{
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     gap: 20px;
-    height: 500px;
-    width: 400px;
+    height: auto;
+    width: 30%;
 }
 
 .popularBlogsSection3 h3{
-    width: 300px ;
-    text-align: right;
-    padding-bottom: 20px;
+    width: 80% ;
+    text-align: left;
+    padding-bottom: 8%;
     color: white;
 }
 
 #blogSection3Div1{
     height: 230px;
-    width: 350px;
+    width: 100%;
     display: flex;
     align-items: end;
     justify-content: center;
     background-image: url(img/img3_blog.png);
+    background-size: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0,1);
 }
 
 #blogSection3Div2{
     height: 230px;
-    width: 350px;
+    width: 100%;
     display: flex;
     align-items: end;
+    justify-content: center;
     background-image: url(img/img4_blog.png);
     background-size: cover;
     box-shadow: black;
 }
 
 .emailUsSubscribe{
-    display: flex;
-    justify-content: space-around;
-    height: 380;
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     background-color: #F8F0EA;
 }
 
 .subscribeForm{
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 4%;
 }
 
 .subscribeForm h3{
@@ -319,8 +356,22 @@ section{
     font-weight: 400;
     line-height: 30px;
     padding-left: 25px;
-    width: 360px;
+    width: 60%;
     text-align: left;
+}
+
+.paddindSubscribe{
+    width: 35%;
+}
+
+.ALLEntreEmailSend{
+    width: 45%;
+}
+
+.entreEmailSend{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 input{
@@ -328,15 +379,15 @@ input{
     font-family: DM Sans;
     border-radius: 10px;
     background: #EFF3F7;
-    width: 400px;
-    padding: 20px 40px;
+    width: 80%;
+    padding: 3% 7%;
 }
 
 button{
     font-size: 16px;
     font-family: DM Sans;
     background: #0A8080;
-    padding: 20px 40px;
+    padding: 3% 7%;
     border-radius: 10px;
     color: white;
 }
@@ -349,13 +400,10 @@ label{
     text-align: center;
 }
 
-.paddindSubscribe{
-    padding-right: 20px;
-}
-
 footer{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
 }
@@ -390,4 +438,105 @@ footer{
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+}
+
+
+@media screen and (max-width: 900px) {
+    h1{
+        font-size: 26px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    p{
+        font-size: 12px;
+    }
+    #quote {
+        font-size: 18px;
+        text-align: left;
+    }
+    #quoteAutor {
+        font-size: 12px;
+        text-align: left;
+        color: #7E8896;
+    }
+    .containerOfAllCart{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    #companyLogo {
+        width: 100%;
+    }
+
+    footer{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .subscribeForm{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .paddindSubscribe{
+        width: 80%;
+    }
+
+    .subscribeForm h3{
+        font-size: 18px;
+    }
+
+    input{
+        font-size: 14px;
+        width: 85%;
+    }
+
+    button{
+        font-size: 14px;
+    }
+
+    .subscribeForm p{
+        font-size: 12px;
+    }
+    
+    .ALLEntreEmailSend{
+        width: 80%;
+    }
+
+    .entreEmailSend{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .imgSlide{
+        display: none;
+    }
+
+    #popularBlogsContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .popularBlogsSection1{
+        width: 80%;
+    }
+    .popularBlogsSection2{
+        width: 80%;
+    }
+    .popularBlogsSection3{
+        width: 80%;
+    }
 }

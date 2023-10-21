@@ -85,10 +85,14 @@ p{
 .teamContaner{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-    padding-right: 10%;
-    padding-left: 10%;
-    padding-top: 70px;
+    gap: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 8%;
+}
+
+.teamContent{
+    width: 100%;
 }
 
 
@@ -166,4 +170,8 @@ p{
     line-height: 35px;
     width: 600px;
     padding-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+
 }
