@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Author: Cosk,wibesite about Innovation agency">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="ContactUs.css">
     <title>Innovations</title>
 </head>
 <body>
     <!-- navbar -->
+    <div class="burgerMenu">
+        <ul>
+            <i class="fa-solid fa-xmark"></i>
+            <li><a href="index.html" aria-label="Home">Home</a></li>
+            <li><a href="advertise.html" aria-label="Adversite">Adversite</a></li>
+            <li><a href="ContactUs.html" aria-label="Supports">Supports</a></li>
+            <li><a href="aboutUs.html" aria-label="About">About</a></li>
+            <li><a href="#" aria-label="login">login</a></li>
+            <li><a href="#" aria-label="Get Started">Get Started</a></li>
+        </ul>
+    </div>
     <header>
         <nav>
+            <i class="fa-solid fa-bars barAws"></i>
             <div id="Logo">
                  Logo
             </div>
@@ -39,18 +52,51 @@
                 <p >We're here to help you succeed. Discover expert guidance, practical tips, and valuable insights for sustainable growth.Let's unlock your business's potential together.</p>
             </div>
         </section>
-        <form action="">
+        <form>
             <div>
                 <h2>Contact Us</h2>
             </div>
             <div class="formCheck">
-                <input type="text" placeholder="Entre Your FullName">
-                <input type="email" placeholder="Entre Your Email">
-                <input type="tel" placeholder="Entre Your Number">
-                <textarea  placeholder="Entre a Description" id="" cols="30" rows="10"></textarea>
-                <button>SEND</button>
+                <input class="noMarginTopForm" id="formInputName" type="text" placeholder="Entre Your FullName">
+                <span class="error">You're name is required</span>
+                <input id="formInputEmail" type="text" placeholder="Entre Your Email">
+                <span class="error">You're E-mail is not valid</span>
+                <input id="formInputNumber" type="number" placeholder="Entre Your Number">
+                <span class="error">You're phone number is required</span>
+                <textarea  placeholder="Entre a Description" id="formInputDescription" cols="30" rows="10"></textarea>
+                <span class="error">You need to entre a description</span>
+                <button type="submit">SEND</button>
             </div>
         </form>
+        <section class="faq" >
+            <h2>FAQ</h2>
+            <div class="faq-question">
+                <div onclick="controlDrop(event)"  class="dropdown_controller">
+                    <span>why?</span><i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="hide_drop">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reprehenderit quas. Porro consequatur error illum, labore doloremque sequi necessitatibus rem quod veniam sapiente quam magnam unde voluptatum quae laudantium laborum.</p>
+                </div>
+            </div>
+            <div class="faq-question">
+                <div onclick="controlDrop(event)"  class="dropdown_controller">
+                    <span>why?</span><i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="hide_drop">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reprehenderit quas. Porro consequatur error illum, labore doloremque sequi necessitatibus rem quod veniam sapiente quam magnam unde voluptatum quae laudantium laborum.</p>
+                </div>
+            </div>
+
+            <div class="faq-question">
+                <div onclick="controlDrop(event)"  class="dropdown_controller">
+                    <span>why?</span><i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="hide_drop">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reprehenderit quas. Porro consequatur error illum, labore doloremque sequi necessitatibus rem quod veniam sapiente quam magnam unde voluptatum quae laudantium laborum.</p>
+                </div>
+            </div>
+
+        </section>
     <!-- footer -->
     <footer>
         <ul class="ulFooter">
@@ -92,5 +138,7 @@
             <li><a href="#" aria-label="Dribbble">Dribbble</a></li>
         </ul>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>

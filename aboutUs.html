@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Author: Cosk,wibesite about Innovation agency">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="aboutUs.css">
-    <title>Innovations</title>
+    
+    
+    <title>About Us</title>
 </head>
 <body>
     <!-- navbar -->
+    <div class="burgerMenu">
+        <ul>
+            <i class="fa-solid fa-xmark"></i>
+            <li><a href="index.html" aria-label="Home">Home</a></li>
+            <li><a href="advertise.html" aria-label="Adversite">Adversite</a></li>
+            <li><a href="ContactUs.html" aria-label="Supports">Supports</a></li>
+            <li><a href="aboutUs.html" aria-label="About">About</a></li>
+            <li><a href="#" aria-label="login">login</a></li>
+            <li><a href="#" aria-label="Get Started">Get Started</a></li>
+        </ul>
+    </div>
     <header>
         <nav>
+            <i class="fa-solid fa-bars barAws"></i>
             <div id="Logo">
                  Logo
             </div>
@@ -40,28 +55,41 @@
         <p>At Innovation, we are dedicated to helping businesses grow. With tailored solutions and innovative strategies, we deliver exceptional results, driving success. Join us on this exciting journey of growth and unlock your business's full potential.</p>
     </section>
     <!-- Section of team -->
-    <section>
-        <div class="teamIntro">
-            <h2>Meet our superheros</h2>
-            <p>Build an incredible workplace and grow your business with Gusto’s all-in-one platform with amazing contents.</p>
+    <section class="container">
+        <a><i id= "button_forward" class="fa-solid fa-chevron-right"></i></a>
+        <div class="co">
+            <div class="teamIntro">
+                <h2>Meet our superheros</h2>
+                <p>Build an incredible workplace and grow your business with Gusto’s all-in-one platform with amazing contents.</p>
+            </div>
+            <div class="teamContaner ">
+                <div id="slideTeam" class="teamContent">
+                    <div class="teamIMG">
+                        <img src="img/team_member_1.png" alt="">
+                    </div>
+                    <h3>Emmalee Mclain</h3>
+                    <p>Product Designer</p>
+                </div>
+                <div id="slideTeamHide1" class="teamContent">
+                    <div class="teamIMG">
+                        <img src="img/team_member_2.png" alt="">
+                    </div>
+                    <h3>Daisy Morgan</h3>
+                    <p>Lead developer</p>
+                </div>
+                <div id="slideTeamHide2" class="teamContent">
+                    <div class="teamIMG">
+                        <img src="img/team_member_3.png" alt="">
+                    </div>
+                    <h3>Ariyanna Hicks</h3>
+                    <p>Experience Designer</p>
+                </div>
+            </div>
         </div>
-        <div class="teamContaner">
-            <div class="teamContent">
-                <img src="img/team_member_1.png" alt="">
-                <h3>Emmalee Mclain</h3>
-                <p>Product Designer</p>
-            </div>
-            <div class="teamImgSlide" class="teamContent">
-                <img src="img/team_member_2.png" alt="">
-                <h3>Daisy Morgan</h3>
-                <p>Lead developer</p>
-            </div>
-            <div class="teamImgSlide" class="teamContent">
-                <img src="img/team_member_3.png" alt="">
-                <h3>Ariyanna Hicks</h3>
-                <p>Experience Designer</p>
-            </div>
-        </div>
+        <a>
+            <i class="fa-solid fa-chevron-right" id="button_backward"></i>
+            </a>
+
     </section>
     <!-- other services section -->
     <section class="otherService">
@@ -173,5 +201,6 @@
             <li><a href="#" aria-label="Dribbble">Dribbble</a></li>
         </ul>
     </footer>
+    <script src="aboutUs.js"></script>
 </body>
 </html>

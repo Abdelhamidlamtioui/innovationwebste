@@ -16,22 +16,39 @@
 }
 
 input{
+    font-size: 18px;
     padding: 20px;
     width: 60%;
-    margin-bottom: 50px;
+    margin-top: 50px;
     border-radius: 20px;
     border-width: 1px;
+}
+
+.noMarginTopForm{
+    margin-top: 0;
+}
+
+
+
+.error{
+    color: red;
+    align-self: flex-start;
+    padding-top: 1.5%;
+    padding-left: 20%;
+    font-size: 16px;
+    display: none;
 }
 
 textarea{
     padding: 20px;
     width: 60%;
-    margin-bottom: 50px;
+    margin-top: 50px;
     border-radius: 20px;
     border-width: 1px;
 }
 
 button{
+    margin-top: 50px;
     padding: 20px 40px;
     border-radius: 5px;
     font-family: DM Sans;
@@ -75,6 +92,108 @@ form h2{
     padding-left: 11%;
 }
 
-@media screen {
+.closeStyle{
+    font-size: 20px;
+}
+
+.faq h2{
+    font-size: 60px;
+    font-family: DM Sans;
+}
+
+.faq{
+    height: 65vh;
+    background-color: antiquewhite;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+}
+
+.faq-question div span{
+    padding-right: 2%;
+    font-size: 40px;
+    font-family: DM Sans;
+    color: #0F2137;
+}
+.faq-question div i{
+    font-size: 40px;
+    color: #0F2137;
+}
+
+.faq-question div p{
+    text-align: left;
+    width: 80%;
+    padding-left: 10%;
+    font-family: DM Sans;
+    color: #0F2137;
+    font-size: 25px;
+}
+.dropdown_controller{
+    display: flex;
+
+}
+
+.faq-question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.hide_drop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-height: 0 !important;
+}
+
+@media screen and (max-width: 700px) {
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formCheck {
+        padding-left: 0px;
+    }
+    input{
+        padding: 20px;
+        width: 100%;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        border-width: 1px;
+    }
     
+    textarea{
+        padding: 20px;
+        width: 100%;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        border-width: 1px;
+    }
+    form h2{
+        font-size: 25px;
+        padding-left: 0px;
+    padding-bottom: 50px;
+    }
+    .faq-question div span{
+        padding-right: 2%;
+        font-size: 20px;
+        font-family: DM Sans;
+        color: #0F2137;
+    }
+    
+    .faq-question div p{
+        font-family: DM Sans;
+        color: #0F2137;
+        font-size: 14px;
+    }
+    .faq-question div i{
+        font-size: 20px;
+        color: #0F2137;
+    }
 }

@@ -60,7 +60,7 @@ h3{
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    width: 700px;
+    width: 60%;
     text-align: left;
 }
 
@@ -78,12 +78,12 @@ h3{
 }
 
 .discriptionOfAdvertiseService h2{
-    padding-top: 70px;
-    width: 800px;
-    padding-bottom: 70px;
+    padding-top: 4%;
+    width: 65%;
+    padding-bottom: 4%;
 }
 .discriptionOfAdvertiseService p{
-    width: 1000px;
+    width: 75%;
     text-align: left;
 }
 
@@ -96,7 +96,7 @@ h3{
 .whyChoseUsOptions{
     display: flex;
     justify-content: space-around;
-    width: 1200px;
+    width: 80%;
     color: #0F2137;
     font-family: DM Sans;
     font-size: 20px;
@@ -115,11 +115,15 @@ h3{
     justify-content: space-around;
 }
 .descriptionOfContentWhyChoseUs{
-    width: 600px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .descriptionOfContentWhyChoseUs h1{
-    width: 500px;
+    padding-left: 5%;
+    width: 80%;
     text-align: left;
     font-family: B612;
     font-size: 40px;
@@ -130,7 +134,8 @@ h3{
 }
 
 .descriptionOfContentWhyChoseUs p{
-    width: 480px;
+    padding-left: 5%;
+    width: 80%;
     text-align: left;
     font-family: DM Sans;
     font-size: 17px;
@@ -167,7 +172,9 @@ h3{
 }
 
 #whyChoseUsImage{
-    padding-top: 100px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .allIcon{
@@ -237,4 +244,78 @@ h3{
     line-height: 35px;
     width: 600px;
     padding-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .allIcon{
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr ;
+    }
+}
+@media screen and (max-width: 900px) {
+    .allIcon{
+        display: grid;
+        grid-template-columns:1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    }
+    .ContentOfWhyChoseUs{
+        display: flex;
+        flex-direction: column;
+    }
+    .otherServiceInro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .otherServiceInro p{
+        width: 60%;
+    }
+    .descriptionOfContentWhyChoseUs p{
+        width: 60%;
+    }
+    whyChoseUsOptions{
+        display: contents;
+        margin-left: 10%;
+        width: 80%;
+    }
+    .whyChoseUsOptions li {
+        padding: 0;
+    }
+    .introDescriptionOfContentWhyChoseUs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .descriptionOfContentWhyChoseUs{
+        width: 100%;
+    }
+    .firstSectionAvertise h2 {
+        padding-left: 90px;
+        color: white;
+        font-family: B612;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding-bottom: 40px;
+    }
+    .firstSectionAvertise p{
+        padding-left: 90px;
+        color: white;
+        font-family: DM Sans;
+        font-size: 18px;
+        font-style: normal;
+        width: 60%;
+        text-align: left;
+    }
+    .whyChoseUsOptions {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        color: #0F2137;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+    }
 }
